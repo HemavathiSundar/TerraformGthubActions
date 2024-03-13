@@ -4,12 +4,12 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::339713085341:oidc-provider/token.actions.githubusercontent.com""
+                "Federated": "arn:aws:iam::339713085341:oidc-provider/token.actions.githubusercontent.com"
             },
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
                 "StringLike": {
-                    "token.actions.githubusercontent.com:sub": "repo:HemavathiSundar/TerraformGthubActions:*"
+                    "token.actions.githubusercontent.com:sub": "repo:HemavathiSundar/TerraformGthubActions/master:*"
                 }
             }
         }
